@@ -1,21 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>Mixify Studio - Cute Wallpapers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixify Studio | Cute & Aesthetic Apps</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; background-color: #fff0f5; color: #333; }
-        .container { padding: 50px; }
-        h1 { color: #ff69b4; }
-        .app-icon { width: 150px; border-radius: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        :root {
+            --primary-pink: #ffb7c5;
+            --soft-white: #ffffff;
+            --text-gray: #555;
+            --accent-color: #ff8fa3;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff9fa;
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--soft-white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--primary-pink);
+        }
+
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            font-size: 1.1em;
+            color: #888;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(255, 183, 197, 0.2);
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background-color: var(--primary-pink);
+            border-radius: 22%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff5c7c;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 40px 20px;
+            font-size: 0.9em;
+            color: #aaa;
+            border-top: 1px solid #eee;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Mixify Studio</h1>
-        <p>Welcome to the home of the cutest wallpapers for your phone!</p>
-        <img src="logo_app.png" class="app-icon" alt="Cute Wallpaper App">
-        <br><br>
-        <a href="privacy-policy.html">Privacy Policy</a> | <a href="mailto:contact@yourmail.com">Contact Us</a>
+
+<header>
+    <div class="logo">Mixify Studio</div>
+    <div class="tagline">Creating the Cutest Digital Experiences</div>
+</header>
+
+<div class="container">
+    <h2>Our Apps</h2>
+    
+    <div class="app-card">
+        <div class="app-icon">🌸</div>
+        <h3>Cute Wallpaper Aesthetic</h3>
+        <p>A collection of high-quality, sweet, and pastel wallpapers for your phone. Make your screen look lovely every day!</p>
+        <a href="#" class="btn">Available on Play Store</a>
     </div>
+
+    <div style="margin-top: 40px;">
+        <p>Working on more exciting projects soon...</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Mixify Studio. All rights reserved.</p>
+    <p>
+        <a href="privacy-policy.html">Privacy Policy</a> | 
+        <a href="app-ads.txt">app-ads.txt</a> | 
+        <a href="mailto:contact@mixify-studio.com">Contact Us</a>
+    </p>
+</footer>
+
 </body>
 </html>
