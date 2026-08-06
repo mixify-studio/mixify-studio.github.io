@@ -1,2 +1,6 @@
 google.com, pub-3018248494561226, DIRECT, f08c47fec0942fa0
 google.com, pub-6504967451989730, DIRECT, f08c47fec0942fa0
+
+facebook.com, 1359745199173711, DIRECT, c3e20eee3f780d68
+
+pangleglobal.com, 5040955, DIRECT
