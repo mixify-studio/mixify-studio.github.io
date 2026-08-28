@@ -1,146 +1,492 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mixify Studio | Cute & Aesthetic Apps</title>
-    <style>
-        :root {
-            --primary-pink: #ffb7c5;
-            --soft-white: #ffffff;
-            --text-gray: #555;
-            --accent-color: #ff8fa3;
-        }
+    <title>Mixify Studio | Cute & Creative Mobile Applications</title>
 
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff9fa;
-            color: var(--text-gray);
-            line-height: 1.6;
-        }
+    <!-- Meta Tags for SEO -->
+    <meta name="description"
+        content="Mixify Studio designs and builds the cutest, most creative mobile experiences on Google Play. Discover our wallpaper, drawing, pixel art, and origami apps.">
+    <meta name="keywords"
+        content="Mixify Studio, cute apps, aesthetic apps, Kawaii wallpaper, pixel art app, AR draw paint, origami step by step, Google Play apps">
+    <meta name="author" content="Mixify Studio">
 
-        header {
-            background-color: var(--soft-white);
-            padding: 40px 20px; /* Giảm padding một chút cho cân đối với ảnh */
-            text-align: center;
-            border-bottom: 3px solid var(--primary-pink);
-        }
+    <!-- Open Graph Metadata for Social Sharing -->
+    <meta property="og:title" content="Mixify Studio | Cute & Creative Mobile Apps">
+    <meta property="og:description"
+        content="Creating delightful digital experiences that bring joy, art, and relaxation to your mobile screen.">
+    <meta property="og:image" content="studio-logo-full.png">
+    <meta property="og:type" content="website">
 
-        /* --- CSS MỚI CHO LOGO STUDIO TRÊN HEADER --- */
-        .site-logo {
-            max-width: 250px; /* Giới hạn chiều rộng tối đa để logo không quá to */
-            height: auto; /* Chiều cao tự động theo tỷ lệ */
-            margin-bottom: 15px;
-            display: block; /* Đảm bảo margin auto hoạt động tốt */
-            margin-left: auto;
-            margin-right: auto;
-        }
-        /* ------------------------------------------- */
-
-        .tagline {
-            font-size: 1.1em;
-            color: #888;
-            margin-top: 10px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .app-card {
-            background: white;
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 10px 20px rgba(255, 183, 197, 0.2);
-            margin-top: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        .app-card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* --- CẬP NHẬT CSS CHO APP ICON ĐỂ DÙNG THẺ <img> --- */
-        .app-icon {
-            width: 120px; /* Tăng kích thước lên một chút cho đẹp */
-            height: 120px;
-            border-radius: 22%; /* Giữ lại kiểu bo tròn "cute" */
-            margin: 0 auto 20px; /* Căn giữa ảnh */
-            display: block; /* Giúp ảnh nằm riêng một dòng và căn giữa */
-            object-fit: cover; /* Đảm bảo ảnh lấp đầy khung mà không bị méo */
-            box-shadow: 0 4px 10px rgba(255, 183, 197, 0.4); /* Thêm chút bóng đổ nhẹ màu hồng cho icon nổi bật */
-        }
-        /* --------------------------------------------------- */
-
-        .btn {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #ff5c7c;
-        }
-
-        footer {
-            margin-top: 60px;
-            padding: 40px 20px;
-            font-size: 0.9em;
-            color: #aaa;
-            border-top: 1px solid #eee;
-        }
-
-        footer a {
-            color: var(--accent-color);
-            text-decoration: none;
-            margin: 0 10px;
-        }
-    </style>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <img src="studio-logo-full.png" alt="Mixify Studio Logo" class="site-logo">
-    
-    <div class="tagline">Creating the Cutest Digital Experiences</div>
-</header>
-
-<div class="container">
-    <h2>Our Apps</h2>
-    
-    <div class="app-card">
-        <img src="wallpaper-logo.png" alt="Cute Wallpaper App Icon" class="app-icon">
-
-        <h3>Cute Wallpaper Aesthetic</h3>
-        <p>A collection of high-quality, sweet, and pastel wallpapers for your phone. Make your screen look lovely every day!</p>
-        <a href="#" class="btn">Available on Play Store</a>
+    <!-- Floating Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
     </div>
 
-    <div style="margin-top: 40px;">
-        <p>Working on more exciting projects soon...</p>
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo-link" id="nav-brand-link">
+                <img src="studio-logo-full.png" alt="Mixify Studio Logo" class="nav-logo" id="nav-logo-img">
+                <span class="nav-brand">Mixify Studio</span>
+            </a>
+            <div class="nav-controls">
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#apps" id="nav-apps-link">Our Apps</a></li>
+                        <li class="nav-item"><a href="#philosophy" id="nav-phil-link">Philosophy</a></li>
+                        <li class="nav-item"><a href="#faq" id="nav-faq-link">FAQ</a></li>
+                        <li class="nav-item"><a href="#contact" id="nav-contact-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Light/Dark Theme Toggle -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode">
+                    <!-- Moon Icon (Dark Mode) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.64 13a1 1 0 0 0-1.05-.14 8.05 8.05 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05z" />
+                    </svg>
+                    <!-- Sun Icon (Light Mode) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 7a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm0-10a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1A1 1 0 0 0 12 5zm0 14a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1zM5.64 6.64a1 1 0 0 0 1.41 0l.7-.7a1 1 0 0 0-1.41-1.41l-.7.7a1 1 0 0 0 0 1.41zm11.31 11.3a1 1 0 0 0 1.41 0l.7-.7a1 1 0 0 0-1.41-1.41l-.7.7a1 1 0 0 0 0 1.41zM5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1zm16-1h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2zM6.34 16.25a1 1 0 0 0-1.41 1.41l.7.7a1 1 0 0 0 1.41-1.41zm11.31-11.3a1 1 0 0 0-1.41 1.41l.7.7a1 1 0 0 0 1.41-1.41z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <span class="badge" id="hero-badge">NEVER STOP BECOMING</span>
+            <h1 class="hero-title" id="hero-heading">Creating the <span class="gradient-text">Cutest Digital</span>
+                Experiences</h1>
+            <p class="hero-subtitle" id="hero-sub">We build highly creative, relaxing, and aesthetic applications that
+                add beauty and joy to your everyday life. Downloaded by millions worldwide.</p>
+            <div class="hero-ctas">
+                <a href="#apps" class="btn-primary" id="hero-cta-primary">Browse Our Apps</a>
+                <a href="https://play.google.com/store/apps/dev?id=5287163504531855090" target="_blank"
+                    class="btn-secondary" id="hero-cta-play">Google Play Store</a>
+            </div>
+
+            <!-- Quick Stats Section -->
+            <div class="stats-row" id="stats-row">
+                <div class="stat-item">
+                    <div class="stat-number">6+</div>
+                    <div class="stat-label">Delightful Apps</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.5★</div>
+                    <div class="stat-label">Average Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps Showcase Section -->
+    <section class="section" id="apps">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="apps-title">Explore Our Applications</h2>
+                <p class="section-subtitle" id="apps-subtitle">Find the perfect companion app for wall art
+                    customization, creative sketches, crafting origami, and relaxing coloring games.</p>
+            </div>
+
+            <!-- Dynamic App Showcase Cards -->
+            <div class="apps-grid" id="apps-grid">
+                <!-- App cards will be dynamically loaded/structured here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="section" id="philosophy"
+        style="background-color: var(--accent-light); transition: background-color var(--transition-speed);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="phil-title-header">Our Crafting Philosophy</h2>
+                <p class="section-subtitle" id="phil-subtitle-header">What makes a Mixify Studio app special? We design
+                    each product from the ground up to achieve three key values.</p>
+            </div>
+
+            <div class="philosophy-grid" id="philosophy-grid">
+                <div class="phil-card">
+                    <div class="phil-icon-wrapper">
+                        <!-- Palette Icon -->
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 3a9 9 0 0 0 0 18c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01a1.49 1.49 0 0 1-.22-.8c0-.83.67-1.5 1.5-1.5h1.61c2.5 0 4.5-2 4.5-4.5 0-4.75-4.04-8.69-8.5-8.69zm-5 8.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                        </svg>
+                    </div>
+                    <h3 class="phil-title">Visual Excellence</h3>
+                    <p class="phil-desc">Cute, pastel-colored aesthetic styles tailored to perfection. We believe that
+                        screen interfaces should be highly visual, artistic, and pleasing to look at.</p>
+                </div>
+
+                <div class="phil-card">
+                    <div class="phil-icon-wrapper">
+                        <!-- Smile/Emoticon Icon -->
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm3.5-9a1.5 1.5 0 1 0-1.5-1.5 1.5 1.5 0 0 0 1.5 1.5zm-7 0a1.5 1.5 0 1 0-1.5-1.5 1.5 1.5 0 0 0 1.5 1.5zm3.5 5a4.5 4.5 0 0 1-3.5-1.8 1 1 0 1 1 1.6-1.2 2.5 2.5 0 0 0 3.8 0 1 1 0 0 1 1.6 1.2 4.5 4.5 0 0 1-3.5 1.8z" />
+                        </svg>
+                    </div>
+                    <h3 class="phil-title">Playful Interactions</h3>
+                    <p class="phil-desc">Interactive mechanics that are simple to use yet full of fun, like our silly
+                        interactive wallpaper touch effects and step-by-step drawing guidance.</p>
+                </div>
+
+                <div class="phil-card">
+                    <div class="phil-icon-wrapper">
+                        <!-- Heart Icon -->
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </div>
+                    <h3 class="phil-title">Made with Love</h3>
+                    <p class="phil-desc">We build each app with care, ensuring robust updates, secure and clean
+                        children-friendly code, and supportive customer care to keep you smiling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="faq-title-header">Frequently Asked Questions</h2>
+                <p class="section-subtitle" id="faq-subtitle-header">Got questions about our services or app download
+                    setups? We have answers.</p>
+            </div>
+
+            <div class="faq-list" id="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I download Mixify Studio apps?</span>
+                        <svg class="faq-toggle-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All of our official applications are distributed through the Google Play Store. Simply click
+                            "Download" on our showcase cards or visit our Google Play Developer profile directly to
+                            download safely.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are the applications free to use?</span>
+                        <svg class="faq-toggle-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our basic versions are free to download and use. We support our free apps through
+                            unintrusive ads (AdMob). Some apps offer optional premium subscriptions for ad-free usage
+                            and exclusive content.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I use the wallpapers for commercial projects?</span>
+                        <svg class="faq-toggle-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All aesthetic wallpapers and artwork inside our apps are strictly for personal,
+                            non-commercial use on personal mobile devices. Redistributing, printing for sale, or selling
+                            them is prohibited.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Who can I contact for support or collaboration?</span>
+                        <svg class="faq-toggle-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We welcome your feedback and support queries! You can contact us directly by email at <a
+                                href="mailto:info.mixify.studio@gmail.com">info.mixify.studio@gmail.com</a> or use the
+                            contact form below.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-header">
+                    <h3>Get in Touch</h3>
+                    <p>Have support feedback, a business query, or just want to say hi? Send us a message!</p>
+                </div>
+                <form class="contact-form" id="contact-form" action="mailto:info.mixify.studio@gmail.com" method="post"
+                    enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email"
+                            required>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control"
+                            placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-control"
+                            placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <button type="submit" class="submit-btn" id="submit-btn">
+                            Send Message
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="success-message" id="success-msg">Message prepared! Opening your mail client...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Drawer Modal (Popup Details) -->
+    <div class="modal" id="app-modal" role="dialog" aria-modal="true">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                </svg>
+            </button>
+            <div class="modal-app-header">
+                <img src="" alt="App Icon" class="modal-app-icon" id="modal-icon">
+                <div class="modal-app-info">
+                    <h3 class="modal-app-title" id="modal-title">App Name</h3>
+                    <span class="modal-app-tag" id="modal-tag">Aesthetic</span>
+                </div>
+            </div>
+            <div class="modal-app-desc" id="modal-desc">
+                App details paragraph...
+            </div>
+            <div class="modal-footer">
+                <a href="" target="_blank" class="btn-primary" id="modal-download-btn">
+                    Download on Google Play
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path
+                            d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
     </div>
-</div>
 
-<footer>
-    <p>&copy; 2026 Mixify Studio. All rights reserved.</p>
-    <p>
-        <a href="privacy-policy.html">Privacy Policy</a> | 
-        <a href="terms-of-use.html">Terms of Use</a> |
-        <a href="app-ads.txt">app-ads.txt</a> | 
-        <a href="mailto:info.mixify.studio@gmail.com">Contact Us</a>
-    </p>
-</footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand-col">
+                    <a href="#" class="logo-link" style="margin-bottom: 12px; display: inline-flex;">
+                        <img src="studio-logo-full.png" alt="Mixify Studio" class="nav-logo">
+                        <span class="nav-brand">Mixify Studio</span>
+                    </a>
+                    <p class="footer-desc">Mixify Studio designs and builds the cutest, most aesthetic, and relaxing
+                        mobile app experiences. Bringing joy and daily art directly to your screens.</p>
+                </div>
+                <div class="footer-links-col">
+                    <div>
+                        <h4 class="footer-list-title">Explore</h4>
+                        <ul class="footer-list">
+                            <li><a href="#apps">Our Apps</a></li>
+                            <li><a href="#philosophy">Philosophy</a></li>
+                            <li><a href="#faq">FAQ Support</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="footer-list-title">Legal</h4>
+                        <ul class="footer-list">
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-of-use.html">Terms of Use</a></li>
+                            <li><a href="app-ads.txt">app-ads.txt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mixify Studio. All rights reserved.</p>
+                <p>Designed and built for creators and enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
 
+    <!-- App JavaScript Logic -->
+    <script>
+        // Applications Database
+        const appsDatabase = [
+            {
+                package: "com.green.nature.leaf.wallpaper.backgrounds",
+                title: "Green Nature Wallpaper",
+                icon: "https://play-lh.googleusercontent.com/cKcsRrfMRQvlk4VSDLVzT8rqqZ0BnWquERpNSYR99f3waHI-qp5bTilP_grGiGIH4MZUwBT0zKpYsheg1R2ZpFk",
+                category: "Personalization",
+                description: "Bring the calming and refreshing beauty of nature directly to your screen. Green Nature Wallpaper offers high-quality background images featuring lush leaves, calming forest trails, and scenic outdoor photos for a peaceful desktop feel."
+            },
+            {
+                package: "com.origami.paper.folding.howtomake.stepbystep.easy.craft.diagram",
+                title: "Simple Origami: Paper Folding",
+                icon: "https://play-lh.googleusercontent.com/iRsRItoE-YkeUXGiPUrYVY70IO-R8hZeIcYKx2RB9hhfH-b0UDscvg_IydVp19xFxL0mR48ZL3ZjmQdYO8bq",
+                category: "Education & Craft",
+                description: "Discover the lovely art of paper folding with Simple Origami. Follow easy step-by-step paper craft diagrams, clear layout details, and video-like guide frames to learn how to fold flowers, animals, paper airplanes, and creative boxes."
+            },
+            {
+                package: "com.pixart.pixel.art.color.by.number.coloring",
+                title: "PixArt: Color by Number Pixel",
+                icon: "https://play-lh.googleusercontent.com/jeyBVKS7DR9E5R7ky_JMnisTgUPt6bN0tnJ0hoPXEQZWSt8kQAWU3hSWZcxC5jpdaGvaAkjPlGA5vCBSnI8gGFw",
+                category: "Games / Puzzle",
+                description: "Relax, unwind, and boost your mindfulness with PixArt. Paint by number grids to transform plain numbered canvases into stunning pixel art masterpieces. Choose from thousands of gorgeous patterns, ranging from easy pixel icons to detailed visual sheets."
+            }
+        ];
+
+        // Render App Cards
+        const appsGrid = document.getElementById('apps-grid');
+
+        appsDatabase.forEach((app, idx) => {
+            const card = document.createElement('div');
+            card.className = 'app-card';
+            card.id = `app-card-${idx}`;
+            card.innerHTML = `
+                <div class="app-card-header">
+                    <img src="${app.icon}" alt="${app.title} Icon" class="app-card-icon" loading="lazy">
+                    <div class="app-card-title-group">
+                        <h3 class="app-card-title">${app.title}</h3>
+                        <span class="app-card-tag">${app.category}</span>
+                    </div>
+                </div>
+                <p class="app-card-desc">${app.description}</p>
+                <div class="app-card-action">
+                    <button class="btn-text" onclick="openAppDetails('${app.package}')" id="btn-details-${idx}">
+                        View Details
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                    </button>
+                    <a href="https://play.google.com/store/apps/details?id=${app.package}" target="_blank" class="btn-secondary" style="padding: 8px 18px; font-size: 0.85em;" id="btn-play-${idx}">Get App</a>
+                </div>
+            `;
+            appsGrid.appendChild(card);
+        });
+
+        // Theme Toggle Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const rootHtml = document.documentElement;
+
+        // Check for saved theme preference or use light theme default
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        rootHtml.setAttribute('data-theme', savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = rootHtml.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            rootHtml.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Modal Popup Logic
+        const modal = document.getElementById('app-modal');
+        const modalIcon = document.getElementById('modal-icon');
+        const modalTitle = document.getElementById('modal-title');
+        const modalTag = document.getElementById('modal-tag');
+        const modalDesc = document.getElementById('modal-desc');
+        const modalDownloadBtn = document.getElementById('modal-download-btn');
+        const modalClose = document.getElementById('modal-close');
+        const modalOverlay = document.getElementById('modal-overlay');
+
+        function openAppDetails(pkg) {
+            const app = appsDatabase.find(a => a.package === pkg);
+            if (app) {
+                modalIcon.src = app.icon;
+                modalIcon.alt = `${app.title} Icon`;
+                modalTitle.textContent = app.title;
+                modalTag.textContent = app.category;
+                modalDesc.textContent = app.description;
+                modalDownloadBtn.href = `https://play.google.com/store/apps/details?id=${app.package}`;
+
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Lock background scroll
+            }
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = ''; // Restore background scroll
+        }
+
+        modalClose.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', closeModal);
+
+        // Escape key to close modal
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+
+        // FAQ Accordion Logic
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+
+                // Close other open items
+                faqItems.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                });
+
+                if (!isActive) {
+                    item.classList.add('active');
+                    const answer = item.querySelector('.faq-answer');
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+            });
+        });
+
+        // Contact Form Simple Submission Message
+        const contactForm = document.getElementById('contact-form');
+        const successMsg = document.getElementById('success-msg');
+
+        contactForm.addEventListener('submit', (e) => {
+            successMsg.style.display = 'block';
+            setTimeout(() => {
+                successMsg.style.display = 'none';
+            }, 6000);
+        });
+    </script>
 </body>
+
 </html>

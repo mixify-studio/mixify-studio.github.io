@@ -1,53 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Use | Mixify Studio</title>
-    <style>
-        :root { --primary-pink: #ffb7c5; --soft-white: #ffffff; --text-gray: #444; --accent-color: #ff8fa3; }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #fff9fa; color: var(--text-gray); line-height: 1.7; }
-        header { background: white; padding: 40px 20px; text-align: center; border-bottom: 3px solid var(--primary-pink); }
-        .container { max-width: 900px; margin: 40px auto; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        h1, h2 { color: var(--accent-color); }
-        h1 { border-bottom: 2px solid #fce4ec; padding-bottom: 10px; }
-        .back-home { display: inline-block; margin-bottom: 20px; color: var(--accent-color); text-decoration: none; font-weight: bold; }
-        footer { text-align: center; padding: 40px; font-size: 0.9em; color: #999; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header><div style="font-size: 2em; font-weight: bold; color: var(--accent-color);">Mixify Studio</div></header>
-    <div class="container">
-        <a href="index.html" class="back-home">← Back to Home</a>
-        <h1>Terms of Use</h1>
-        <p>By downloading or using our apps, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app.</p>
 
-        <h2>1. License and Prohibitions</h2>
-        <p>You are not allowed to copy or modify the app, any part of the app, or our trademarks in any way. You are not allowed to attempt to extract the source code of the app, and you also shouldn't try to translate the app into other languages or make derivative versions.</p>
-        <p>The app itself, and all the trademarks, copyright, database rights, and other intellectual property rights related to it, still belong to <strong>Mixify Studio</strong>.</p>
-
-        <h2>2. Subscriptions and Payments</h2>
-        <p>Certain parts of our Service are billed on a subscription basis. You will be billed in advance on a recurring and periodic basis (monthly or annually).</p>
-        <ul>
-            <li>Subscriptions automatically renew unless auto-renew is turned off at least 24-hours before the end of the current period.</li>
-            <li>Your Google Play Account will be charged for renewal within 24-hours prior to the end of the current period.</li>
-            <li>Any unused portion of a free trial period, if offered, will be forfeited when you purchase a subscription.</li>
-            <li>You can manage or cancel your subscription in your Google Play Store settings at any time.</li>
-        </ul>
-
-        <h2>3. Content Rights</h2>
-        <p>The images and wallpapers provided in our apps are for personal, non-commercial use only. You may set them as your device wallpaper but you are not allowed to redistribute them or sell them as your own work.</p>
-
-        <h2>4. Changes to These Terms</h2>
-        <p>We may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Terms and Conditions on this page.</p>
-
-        <h2>5. Disclaimer</h2>
-        <p>The app is provided "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind. Mixify Studio does not guarantee that the app will always be error-free or uninterrupted.</p>
-
-        <h2>Contact Us</h2>
-        <p>If you have any questions about these Terms, please contact us at:</p>
-        <p><strong>Email:</strong> tantuan127@gmail.com</p>
+    <!-- Floating Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
     </div>
-    <footer>&copy; 2026 Mixify Studio.</footer>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="studio-logo-full.png" alt="Mixify Studio Logo" class="nav-logo">
+                <span class="nav-brand">Mixify Studio</span>
+            </a>
+            <div class="nav-controls">
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="index.html#apps">Our Apps</a></li>
+                        <li class="nav-item"><a href="index.html#philosophy">Philosophy</a></li>
+                        <li class="nav-item"><a href="index.html#faq">FAQ</a></li>
+                        <li class="nav-item"><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Light/Dark Theme Toggle -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="moon-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.64 13a1 1 0 0 0-1.05-.14 8.05 8.05 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05z" />
+                    </svg>
+                    <svg class="sun-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 7a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm0-10a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1A1 1 0 0 0 12 5zm0 14a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1zM5.64 6.64a1 1 0 0 0 1.41 0l.7-.7a1 1 0 0 0-1.41-1.41l-.7.7a1 1 0 0 0 0 1.41zm11.31 11.3a1 1 0 0 0 1.41 0l.7-.7a1 1 0 0 0-1.41-1.41l-.7.7a1 1 0 0 0 0 1.41zM5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1zm16-1h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2zM6.34 16.25a1 1 0 0 0-1.41 1.41l.7.7a1 1 0 0 0 1.41-1.41zm11.31-11.3a1 1 0 0 0-1.41 1.41l.7.7a1 1 0 0 0 1.41-1.41z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Legal Content Section -->
+    <main class="legal-page">
+        <div class="container">
+            <div class="legal-container">
+                <a href="index.html" class="back-home-link">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+                    </svg>
+                    Back to Home
+                </a>
+                <h1>Terms of Use</h1>
+                <p class="legal-date">Last updated: January 18, 2026</p>
+
+                <p>By downloading or using our apps, these terms will automatically apply to you – you should make sure
+                    therefore that you read them carefully before using the apps.</p>
+
+                <h2>1. License and Prohibitions</h2>
+                <p>You are not allowed to copy or modify the apps, any part of the apps, or our trademarks in any way.
+                    You are not allowed to attempt to extract the source code of the apps, and you also shouldn't try to
+                    translate the apps into other languages or make derivative versions.</p>
+                <p>The apps themselves, and all the trademarks, copyright, database rights, and other intellectual
+                    property rights related to them, still belong to <strong>Mixify Studio</strong>.</p>
+
+                <h2>2. Subscriptions and Payments</h2>
+                <p>Certain parts of our Services are billed on a subscription basis. You will be billed in advance on a
+                    recurring and periodic basis (monthly or annually) through Google Play.</p>
+                <ul>
+                    <li>Subscriptions automatically renew unless auto-renew is turned off at least 24-hours before the
+                        end of the current billing period.</li>
+                    <li>Your Google Play Account will be charged for renewal within 24-hours prior to the end of the
+                        current period.</li>
+                    <li>Any unused portion of a free trial period, if offered, will be forfeited when you purchase a
+                        subscription.</li>
+                    <li>You can manage or cancel your subscription in your Google Play Store settings at any time.</li>
+                </ul>
+
+                <h2>3. Content Rights</h2>
+                <p>The images, wallpapers, craft designs, and other digital creative resources provided in our apps are
+                    for personal, non-commercial use only. You may set them as your device wallpaper or draw along with
+                    them, but you are not allowed to redistribute, resell, or license them as your own work.</p>
+
+                <h2>4. Changes to These Terms</h2>
+                <p>We may update our Terms and Conditions from time to time. Thus, you are advised to review this page
+                    periodically for any changes. We will notify you of any changes by posting the new Terms and
+                    Conditions on this page.</p>
+
+                <h2>5. Disclaimer</h2>
+                <p>The apps are provided "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of
+                    any kind. Mixify Studio does not guarantee that the apps will always be error-free or uninterrupted.
+                </p>
+
+                <h2>Contact Us</h2>
+                <p>If you have any questions or suggestions about our Terms of Use, please contact us at:</p>
+                <p><strong>Email:</strong> <a
+                        href="mailto:info.mixify.studio@gmail.com">info.mixify.studio@gmail.com</a> </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>&copy; 2026 Mixify Studio. All rights reserved.</p>
+                <p>
+                    <a href="privacy-policy.html" style="margin-right: 15px;">Privacy Policy</a>
+                    <a href="terms-of-use.html">Terms of Use</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App JavaScript Logic -->
+    <script>
+        // Theme Toggle Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const rootHtml = document.documentElement;
+
+        // Check for saved theme preference or use light theme default
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        rootHtml.setAttribute('data-theme', savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = rootHtml.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            rootHtml.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
 </body>
+
 </html>

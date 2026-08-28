@@ -1,67 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | Mixify Studio</title>
-    <style>
-        :root { --primary-pink: #ffb7c5; --soft-white: #ffffff; --text-gray: #333; --accent-color: #ff8fa3; }
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: #fff9fa; color: var(--text-gray); line-height: 1.7; }
-        header { background: white; padding: 40px 20px; text-align: center; border-bottom: 3px solid var(--primary-pink); }
-        .container { max-width: 900px; margin: 40px auto; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(255, 183, 197, 0.15); }
-        h1 { color: var(--accent-color); font-size: 2.2em; text-align: center; }
-        h2 { color: var(--accent-color); border-left: 5px solid var(--primary-pink); padding-left: 15px; margin-top: 35px; }
-        p, li { margin-bottom: 12px; }
-        ul { padding-left: 20px; }
-        .back-home { display: inline-block; margin-bottom: 20px; color: var(--accent-color); text-decoration: none; font-weight: bold; }
-        footer { text-align: center; padding: 40px; font-size: 0.9em; color: #999; border-top: 1px solid #eee; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header><div style="font-size: 2em; font-weight: bold; color: var(--accent-color);">Mixify Studio</div></header>
-    <div class="container">
-        <a href="index.html" class="back-home">← Back to Home</a>
-        <h1>Privacy Policy</h1>
-        <p><em>Last updated: January 18, 2026</em></p>
 
-        <p>Mixify Studio built the apps as a Commercial app. This SERVICE is provided by Mixify Studio and is intended for use as is.</p>
-
-        <h2>1. Information Collection and Use</h2>
-        <p>For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information. The information that we request will be retained by us and used as described in this privacy policy.</p>
-        <p>The app does use third-party services that may collect information used to identify you. This includes, but is not limited to, device identifiers (AAID, IDFA), IP addresses, and usage statistics.</p>
-
-        <h2>2. Log Data</h2>
-        <p>We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.</p>
-
-        <h2>3. Cookies</h2>
-        <p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. Our Service does not use these “cookies” explicitly. However, the app may use third-party code and libraries that use “cookies” to collect information and improve their services.</p>
-
-        <h2>4. Service Providers</h2>
-        <p>We may employ third-party companies and individuals due to the following reasons:</p>
-        <ul>
-            <li>To facilitate our Service;</li>
-            <li>To provide the Service on our behalf;</li>
-            <li>To perform Service-related services; or</li>
-            <li>To assist us in analyzing how our Service is used.</li>
-        </ul>
-        <p>Links to the privacy policy of third-party service providers used by the app:</p>
-        <ul>
-            <li><a href="https://www.google.com/policies/privacy/">Google Play Services</a></li>
-            <li><a href="https://support.google.com/admob/answer/6128543?hl=vi">AdMob</a></li>
-            <li><a href="https://firebase.google.com/policies/analytics">Google Analytics for Firebase</a></li>
-            <li><a href="https://firebase.google.com/support/privacy/">Firebase Crashlytics</a></li>
-        </ul>
-
-        <h2>5. Children’s Privacy</h2>
-        <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13 years of age. If we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers.</p>
-
-        <h2>6. Security</h2>
-        <p>We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable.</p>
-
-        <h2>7. Contact Us</h2>
-        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
-        <p><strong>Email:</strong> tantuan127@gmail.com</p>
+    <!-- Floating Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
     </div>
-    <footer>&copy; 2026 Mixify Studio. All Rights Reserved.</footer>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="studio-logo-full.png" alt="Mixify Studio Logo" class="nav-logo">
+                <span class="nav-brand">Mixify Studio</span>
+            </a>
+            <div class="nav-controls">
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="index.html#apps">Our Apps</a></li>
+                        <li class="nav-item"><a href="index.html#philosophy">Philosophy</a></li>
+                        <li class="nav-item"><a href="index.html#faq">FAQ</a></li>
+                        <li class="nav-item"><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Light/Dark Theme Toggle -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="moon-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.64 13a1 1 0 0 0-1.05-.14 8.05 8.05 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05z" />
+                    </svg>
+                    <svg class="sun-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 7a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm0-10a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1A1 1 0 0 0 12 5zm0 14a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1zM5.64 6.64a1 1 0 0 0 1.41 0l.7-.7a1 1 0 0 0-1.41-1.41l-.7.7a1 1 0 0 0 0 1.41zm11.31 11.3a1 1 0 0 0 1.41 0l.7-.7a1 1 0 0 0-1.41-1.41l-.7.7a1 1 0 0 0 0 1.41zM5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1zm16-1h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2zM6.34 16.25a1 1 0 0 0-1.41 1.41l.7.7a1 1 0 0 0 1.41-1.41zm11.31-11.3a1 1 0 0 0-1.41 1.41l.7.7a1 1 0 0 0 1.41-1.41z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Legal Content Section -->
+    <main class="legal-page">
+        <div class="container">
+            <div class="legal-container">
+                <a href="index.html" class="back-home-link">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+                    </svg>
+                    Back to Home
+                </a>
+                <h1>Privacy Policy</h1>
+                <p class="legal-date">Last updated: January 18, 2026</p>
+
+                <p>Mixify Studio built the apps as Commercial applications. This SERVICE is provided by Mixify Studio
+                    and is intended for use as is.</p>
+
+                <h2>1. Information Collection and Use</h2>
+                <p>For a better experience, while using our Service, we may require you to provide us with certain
+                    personally identifiable information. The information that we request will be retained by us and used
+                    as described in this privacy policy.</p>
+                <p>The app does use third-party services that may collect information used to identify you. This
+                    includes, but is not limited to, device identifiers (AAID, IDFA), IP addresses, and usage
+                    statistics.</p>
+
+                <h2>2. Log Data</h2>
+                <p>We want to inform you that whenever you use our Service, in a case of an error in the app we collect
+                    data and information (through third-party products) on your phone called Log Data. This Log Data may
+                    include information such as your device Internet Protocol (“IP”) address, device name, operating
+                    system version, the configuration of the app when utilizing our Service, the time and date of your
+                    use of the Service, and other statistics.</p>
+
+                <h2>3. Cookies</h2>
+                <p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers.
+                    Our Service does not use these “cookies” explicitly. However, the app may use third-party code and
+                    libraries that use “cookies” to collect information and improve their services.</p>
+
+                <h2>4. Service Providers</h2>
+                <p>We may employ third-party companies and individuals due to the following reasons:</p>
+                <ul>
+                    <li>To facilitate our Service;</li>
+                    <li>To provide the Service on our behalf;</li>
+                    <li>To perform Service-related services; or</li>
+                    <li>To assist us in analyzing how our Service is used.</li>
+                </ul>
+                <p>Links to the privacy policy of third-party service providers used by the app:</p>
+                <ul>
+                    <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
+                    <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob</a></li>
+                    <li><a href="https://firebase.google.com/policies/analytics" target="_blank">Google Analytics for
+                            Firebase</a></li>
+                    <li><a href="https://firebase.google.com/support/privacy/" target="_blank">Firebase Crashlytics</a>
+                    </li>
+                </ul>
+
+                <h2>5. Children’s Privacy</h2>
+                <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally
+                    identifiable information from children under 13 years of age. If we discover that a child under 13
+                    has provided us with personal information, we immediately delete this from our servers.</p>
+
+                <h2>6. Security</h2>
+                <p>We value your trust in providing us your Personal Information, thus we are striving to use
+                    commercially acceptable means of protecting it. But remember that no method of transmission over the
+                    internet, or method of electronic storage is 100% secure and reliable.</p>
+
+                <h2>7. Contact Us</h2>
+                <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:
+                </p>
+                <p><strong>Email:</strong> <a
+                        href="mailto:info.mixify.studio@gmail.com">info.mixify.studio@gmail.com</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>&copy; 2026 Mixify Studio. All rights reserved.</p>
+                <p>
+                    <a href="privacy-policy.html" style="margin-right: 15px;">Privacy Policy</a>
+                    <a href="terms-of-use.html">Terms of Use</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App JavaScript Logic -->
+    <script>
+        // Theme Toggle Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const rootHtml = document.documentElement;
+
+        // Check for saved theme preference or use light theme default
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        rootHtml.setAttribute('data-theme', savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = rootHtml.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            rootHtml.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
 </body>
+
 </html>
