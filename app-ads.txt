@@ -5,4 +5,4 @@ facebook.com, 1359745199173711, DIRECT, c3e20eee3f780d68
 
 pangleglobal.com, 5040955, DIRECT
 applovin.com, 9b7ebb0dff192127cd5f6af4b340eac1, DIRECT
-
+vungle.com, 6ad4502c56c1b4e3f25907a1, DIRECT, c107d686becd2d77
